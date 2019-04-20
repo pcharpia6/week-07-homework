@@ -14,22 +14,32 @@
 </head>
 <body>
     <!-- container for page width formatting -->
-    <div class="container">
-        <!-- initial row for full width button generation -->
-        <div class="row">
-            <div class="col-lg-12" id="col-buttons"></div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <img src="assets/images/title.png">
+            <p class="lead">Select a food topic below, or add your own! Clicking on the button will bring 10 gifs of your item of choice!</p>
+            <img src="assets/images/neon-line.png">
         </div>
-        <!-- second row for gifs and button addition -->
-        <div class="row">
-            <div class="col-lg-8" id="col-gifs"></div>
-            <div class="col-lg-4" id="col-search">
-                <div class="text">Add a search term:</div>
-                <input class=“form-control” type=“text” placeholder=“Search” aria-label=“Search”><br>
-                <button class="btn btn-success" id="submit">Add</button>
+    </div>
+    <div id="main">
+        <div class="container">
+            <!-- initial row for full width button generation -->
+            <div class="row">
+                <div class="col-lg-12" id="col-buttons"></div>
+            </div>
+            <!-- second row for gifs and button addition -->
+            <div class="row">
+                <div class="col-lg-8" id="col-gifs"></div>
+                <div class="col-lg-4" id="col-search">
+                    <div class="text">Add a search term:</div>
+                    <input class=“form-control” type=“text” placeholder=“Search” aria-label=“Search” id="addVal"><br>
+                    <button class="btn btn-success" id="add">Add</button>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="javascript/app.js" type="text/javascript"></script>
+    
 </body>
 </html>
